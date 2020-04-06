@@ -4,7 +4,9 @@ module.exports = {
     node: true
   },
   extends: [
-    'standard'
+    'standard',
+    'plugin:jest/recommended',
+    'plugin:jest/style'
   ],
   globals: {
     Atomics: 'readonly',
@@ -16,7 +18,8 @@ module.exports = {
     sourceType: 'module'
   },
   plugins: [
-    '@typescript-eslint'
+    '@typescript-eslint',
+    'jest'
   ],
   rules: {
   }
